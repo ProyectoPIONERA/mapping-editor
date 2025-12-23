@@ -9,6 +9,10 @@
 
 3Xmap Studio is a visual editor for **[R2RML](https://www.w3.org/TR/r2rml/)** and **[RML](https://w3id.org/rml/core/spec)** mappings. It is built with [Streamlit](https://github.com/streamlit/streamlit) and uses [Morph-KGC](https://github.com/morph-kgc/morph-kgc/) to create the knowledge graph.
 
+## Project Status
+
+🚧 **Active Development** - This project is actively maintained and under continuous development.
+
 ## Features :sparkles:
 
 - Supports relational databases and CSV files (more formats to come).
@@ -18,7 +22,7 @@
 - Explore your mapping.
 - Save the session for later.
 
-## Getting Started :rocket:
+## Installation
 
 You can run 3Xmap Studio by cloning this repository and executing:
 
