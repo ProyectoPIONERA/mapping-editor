@@ -56,10 +56,6 @@ RML, QL = get_required_ns_dict().values()
 # Function to render headers (UNUSED)
 def render_header(title, description, dark_mode: bool = False):
 
-    # get logo
-    image_path = "logo/logo_inverse.png" if dark_mode else "logo/logo.png"
-    with open(image_path, "rb") as img_file:
-        image_base64 = base64.b64encode(img_file.read()).decode()
 
     # set colors
     bg_color = "#1e1e1e" if dark_mode else "#f0f0f0"
@@ -69,8 +65,6 @@ def render_header(title, description, dark_mode: bool = False):
     # return header
     return f"""<div style="display:flex; align-items:center; background-color:{bg_color}; padding:16px 20px;
                 border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-        <img src="data:image/png;base64,{image_base64}" alt="Logo"
-             style="height:74px; margin-right:70px; border-radius:8px;" />
         <div style="display:flex; flex-direction:column;">
         <div style="font-size:1.4rem; font-weight:600; color:{title_color}; margin-bottom:4px;">
             {title}
@@ -85,7 +79,6 @@ def render_header(title, description, dark_mode: bool = False):
 def render_sidebar_logo(dark_mode: bool = False):
 
     resize_factor = 0.35
-    image_path = "logo/logo_inverse.png" if dark_mode else "logo/logo.png"
 
     # open and resize image
     with open(image_path, "rb") as img_file:
@@ -779,9 +772,6 @@ def init_page():
         st.session_state["dark_mode_flag"] = streamlit_js_eval(js_expressions="window.matchMedia('(prefers-color-scheme: dark)').matches",
             key="dark_mode")
 
-    # Sidebar logo
-    dark_mode = False if "dark_mode_flag" not in st.session_state or not st.session_state["dark_mode_flag"] else True
-    utils.render_sidebar_logo(dark_mode=dark_mode)
 
     # Import style
     style_container = st.empty()
