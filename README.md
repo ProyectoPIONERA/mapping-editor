@@ -24,6 +24,14 @@ python -m streamlit run Mapping_Editor.py
 
 We recommend to use [virtual environments](https://docs.python.org/3/library/venv.html#) to install the Mapping Editor.
 
-## License :unlock:
+## Funding
+
+This work has received funding from the PIONERA project (Enhancing interoperability in data spaces through artificial intelligence), a project funded in the context of the call for Technological Products and Services for Data Spaces of the Ministry for Digital Transformation and Public Administration within the framework of the PRTR funded by the European Union (NextGenerationEU)
+
+<div align="center">
+  <img src="Logos financiación.png" alt="Logos financiación" width="900" />
+</div>
+
+## License
 
 Mapping Editor is available under the **[Apache License 2.0](https://github.com/ProyectoPIONERA/mapping-editor/blob/main/LICENSE)**.
