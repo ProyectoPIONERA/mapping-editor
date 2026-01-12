@@ -1,4 +1,7 @@
 cryptography
+elementpath
+jsonpath-ng
+lxml
 matplotlib
 morph-kgc
 networkx
@@ -11,9 +14,11 @@ plotly
 psycopg[binary]
 pyarrow
 PyMySQL
+pymongo
 pyodbc
 pyreadstat
 pyvis
+langcodes
 rdflib
 requests
 sqlalchemy
@@ -21,7 +26,7 @@ sqlglot
 streamlit
 streamlit-js-eval
 xlrd
-
+langcodes
 
 
 

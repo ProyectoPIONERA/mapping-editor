@@ -17,6 +17,7 @@ if "dark_mode_flag" not in st.session_state or st.session_state["dark_mode_flag"
         key="dark_mode")
 
 
+
 st.markdown(f"""
 <h1>Welcome to <span style='color:{color};'>Mapping Editor</span></h1>
 """, unsafe_allow_html=True)
